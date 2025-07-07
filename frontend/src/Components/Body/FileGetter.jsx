@@ -75,13 +75,14 @@ function FileGetter() {
             className="hidden"
             accept="application/pdf"
           />
-          <Button
-            className="mx-2 my-2 h-12 items-center rounded-4xl"
-            onClick={handleUploadClick}
-            imgSrc={uploadIcon}
-          >
-            Upload File
-          </Button>
+          <a href="https://app.docutech.io" target="_blank" rel="noopener noreferrer">
+            <Button
+              className="mx-2 my-2 h-12 items-center rounded-4xl"
+              imgSrc={uploadIcon}
+            >
+              Upload File
+            </Button>
+          </a>
         </div>
         <p className="pointer-events-none px-4 text-sm font-light"> OR </p>
         <Button

@@ -44,7 +44,13 @@ function NavBar() {
                 alt="User Icon"
               />
             </a>
-            <Button className={"rounded-md"}>Get Started</Button>
+            <a
+              href="https://app.docutech.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className={"rounded-md"}>Get Started</Button>
+            </a>
           </div>
         </div>
       </div>
