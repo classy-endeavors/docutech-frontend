@@ -13,7 +13,7 @@ const HeadMessage = () => {
 };
 
 const Header = () => {
-  const words = useMemo(() => ["Create", "Sign", "Convert"], []);
+  const words = useMemo(() => ["Sign", "Secure", "Complete"], []);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedWord, setDisplayedWord] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -91,7 +91,7 @@ const Header = () => {
 
   return (
     <h1 className="pointer-events-none my-3 text-center text-6xl font-bold">
-      AI-Powered Unified Platform; <br />
+      Professional Document Platform; <br />
       <span className="from-brand-blue-down via-brand-blue to-brand-blue bg-linear-to-r from-0% via-55% to-100% bg-clip-text text-transparent">
         {displayedWord}{" "}
       </span>
@@ -102,8 +102,7 @@ const Header = () => {
 
 const SubHeader = () => (
   <p className="text-brand-black-light pointer-events-none my-10 text-center">
-    Fast, Smart & Secure – Works with Google Drive, Dropbox, Salesforce & Your
-    Favorite Business Tools
+    Fast, Smart & Secure – Professional electronic signature solution for your business
   </p>
 );
 

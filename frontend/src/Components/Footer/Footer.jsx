@@ -49,7 +49,7 @@ export default function Footer() {
             <a href="#" className="underline-effect mx-3">
               Legal terms
             </a>
-            <a href="?" className="underline-effect mx-3">
+            <a href="#" className="underline-effect mx-3">
               Privacy Policy
             </a>
           </div>

@@ -1,8 +1,6 @@
 import Button from "../Buttons/Button";
 import data from "../data";
-import { SignUp } from "./signup";
 import icon from "/src/assets/dt_logo.svg";
-import discordIcon from "/src/assets/icons/discord.svg";
 
 function NavBar() {
   window.addEventListener("scroll", function () {
@@ -15,7 +13,6 @@ function NavBar() {
   });
   return (
     <>
-      <SignUp />
       <div
         id="NavBar"
         className="sticky top-0 z-20 backdrop-blur-xl duration-300"
@@ -37,13 +34,6 @@ function NavBar() {
             ))}
           </div>
           <div className="flex items-center space-x-5">
-            <a href="https://discord.com">
-              <img
-                className="hover:drop-shadow-[0px_3px_1px_rgba(0,0,0,0.25)]"
-                src={discordIcon}
-                alt="User Icon"
-              />
-            </a>
             <a
               href="https://app.docutech.io"
               target="_blank"

@@ -1,13 +1,11 @@
 import { useState, useRef } from "react";
 import Button from "../Buttons/Button";
 import uploadIcon from "../../assets/icons/upload.svg";
-import AiIcon from "../../assets/icons/generate.svg";
 
 function FileGetter() {
   const [fileName, setFileName] = useState("Drop your file here");
   const fileInputRef = useRef();
   const [fileURL, setFileURL] = useState(null);
-  const [loading, setLoading] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const dropZoneRef = useRef(null);
 
@@ -20,16 +18,7 @@ function FileGetter() {
     }
   };
 
-  const handleUploadClick = () => {
-    fileInputRef.current.click();
-  };
 
-  const handleGenerateWithAI = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  };
 
   const handleDragOver = (e) => {
     e.preventDefault();
@@ -84,35 +73,9 @@ function FileGetter() {
             </Button>
           </a>
         </div>
-        <p className="pointer-events-none px-4 text-sm font-light"> OR </p>
-        <Button
-          className="h-12 items-center rounded-4xl"
-          imgSrc={AiIcon}
-          onClick={handleGenerateWithAI}
-        >
-          Generate with AI
-        </Button>
       </div>
       <div className="shadow-brand-pink h-[700px] w-[700px] rounded-2xl bg-white shadow-md ring-1 ring-black ring-inset">
-        {loading ? (
-          <div className="flex h-full w-full flex-col items-center justify-center p-8">
-            <div className="w-full animate-pulse space-y-6">
-              <div className="mx-auto h-6 w-3/4 rounded bg-gray-200"></div>
-              <div className="h-80 w-full rounded bg-gray-200"></div>
-              <div className="space-y-3">
-                <div className="h-4 w-full rounded bg-gray-200"></div>
-                <div className="h-4 w-5/6 rounded bg-gray-200"></div>
-                <div className="h-4 w-4/6 rounded bg-gray-200"></div>
-              </div>
-              <div className="space-y-3">
-                <div className="h-4 w-full rounded bg-gray-200"></div>
-                <div className="h-4 w-5/6 rounded bg-gray-200"></div>
-                <div className="h-4 w-4/6 rounded bg-gray-200"></div>
-              </div>
-              <div className="mx-auto h-10 w-1/3 rounded bg-gray-200"></div>
-            </div>
-          </div>
-        ) : fileURL ? (
+        {fileURL ? (
           <embed
             src={`${fileURL}#toolbar=0`}
             type="application/pdf"

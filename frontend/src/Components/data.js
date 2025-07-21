@@ -1,24 +1,9 @@
-import profilePhoto from "../assets/photos/person.jpg";
-import UsdLogo from "../assets/logos/us-san-diego.svg";
-import IvirmaLogo from "../assets/logos/IVIRMA.svg";
-import HowardLogo from "../assets/logos/Howard Uni.svg";
-import PharmLogo from "../assets/logos/pharm bill.svg";
-import AbsaLogo from "../assets/logos/absa.svg";
-import B2bRocketLogo from "../assets/logos/b2brocket.svg";
-import DiscordIcon from "../assets/icons/discord white.svg";
 import EnvelopeIcon from "../assets/icons/envelope.svg";
-import FacebookIcon from "../assets/icons/facebook.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
-import MessageIcon from "../assets/icons/message.svg";
-import WhatsappIcon from "../assets/icons/whatsapp.svg";
 
 const socialIcons = [
-  { name: "WhatsApp", icon: WhatsappIcon, url: "https://wa.me/message" },
-  { name: "Facebook", icon: FacebookIcon, url: "https://facebook.com" },
-  { name: "LinkedIn", icon: LinkedinIcon, url: "https://linkedin.com" },
-  { name: "Discord", icon: DiscordIcon, url: "https://discord.com" },
   { name: "Email", icon: EnvelopeIcon, url: "mailto:contact@docutech.com" },
-  { name: "Message", icon: MessageIcon, url: "https://m.me" },
+  { name: "LinkedIn", icon: LinkedinIcon, url: "https://linkedin.com/company/docutech" },
 ];
 
 const sections = [
@@ -28,102 +13,37 @@ const sections = [
   { name: "FAQ", link: "#faq" },
 ];
 
-const features = {
-  fileInput: {
-    children: "Drop your file here",
-    button: {
-      iconPath: "",
-      children: "Upload File",
-    },
-  },
-  button: {
-    iconPath: "",
-    children: "Generate with AI",
-  },
-};
 
-const clientLogos = [
-  UsdLogo,
-  IvirmaLogo,
-  HowardLogo,
-  PharmLogo,
-  AbsaLogo,
-  B2bRocketLogo,
-];
 
-const userFeedbacks = [
-  {
-    id: 1,
-    profilePhoto: profilePhoto,
-    children:
-      "Create contracts, agreements & forms in seconds using advanced AI technology",
-    rating: 5,
-  },
-  {
-    id: 2,
-    profilePhoto: profilePhoto,
-    children:
-      "Create contracts, agreements & forms in seconds using advanced AI technology",
-    rating: 5,
-  },
-  {
-    id: 3,
-    profilePhoto: profilePhoto,
-    children:
-      "Create contracts, agreements & forms in seconds using advanced AI technology",
-    rating: 5,
-  },
-  {
-    id: 4,
-    profilePhoto: profilePhoto,
-    children:
-      "Create contracts, agreements & forms in seconds using advanced AI technology",
-    rating: 5,
-  },
-  {
-    id: 5,
-    profilePhoto: profilePhoto,
-    children:
-      "Create contracts, agreements & forms in seconds using advanced AI technology",
-    rating: 5,
-  },
-  {
-    id: 6,
-    profilePhoto: profilePhoto,
-    children:
-      "Create contracts, agreements & forms in seconds using advanced AI technology",
-    rating: 5,
-  },
-];
 
 const faq = [
   {
     q: "Are DocuTech signatures legally binding?",
-    a: "Yep! DocuTech signatures are totally legit and legally binding, just like signing with a pen—except digital and way cooler. As long as they follow the right security rules, courts accept them, so no worries there. Plus, they’re encrypted and tracked, so it's safer than losing a paper contract in your junk drawer!",
+    a: "Yes, DocuTech signatures are legally binding and comply with ESIGN Act, UETA, and eIDAS regulations. Our electronic signatures have the same legal validity as handwritten signatures and are accepted by courts worldwide.",
   },
   {
-    q: "Are DocuTech signatures legally binding?",
-    a: "Yep! DocuTech signatures are totally legit and legally binding, just like signing with a pen—except digital and way cooler. As long as they follow the right security rules, courts accept them, so no worries there. Plus, they’re encrypted and tracked, so it's safer than losing a paper contract in your junk drawer!",
+    q: "What file formats does DocuTech support?",
+    a: "DocuTech currently supports PDF documents for signing. We're working on expanding support for additional document formats in future updates.",
   },
   {
-    q: "Are DocuTech signatures legally binding?",
-    a: "Yep! DocuTech signatures are totally legit and legally binding, just like signing with a pen—except digital and way cooler. As long as they follow the right security rules, courts accept them, so no worries there. Plus, they’re encrypted and tracked, so it's safer than losing a paper contract in your junk drawer!",
+    q: "How secure are my documents?",
+    a: "We take security seriously. All documents are encrypted with AES-256 encryption during transmission and storage. We maintain detailed audit trails and comply with SOC-2, GDPR, and HIPAA standards.",
   },
   {
-    q: "Are DocuTech signatures legally binding?",
-    a: "Yep! DocuTech signatures are totally legit and legally binding, just like signing with a pen—except digital and way cooler. As long as they follow the right security rules, courts accept them, so no worries there. Plus, they’re encrypted and tracked, so it's safer than losing a paper contract in your junk drawer!",
+    q: "Can multiple people sign the same document?",
+    a: "Yes, DocuTech supports multiple signers on the same document. You can set signing order, send reminders, and track the progress of each signer in real-time.",
   },
   {
-    q: "Are DocuTech signatures legally binding?",
-    a: "Yep! DocuTech signatures are totally legit and legally binding, just like signing with a pen—except digital and way cooler. As long as they follow the right security rules, courts accept them, so no worries there. Plus, they’re encrypted and tracked, so it's safer than losing a paper contract in your junk drawer!",
+    q: "Is there a free plan available?",
+    a: "Yes, we offer a free plan that includes up to 5 documents per month with basic features. For unlimited documents and advanced features, check out our Premium and Teams plans.",
   },
 ];
 
 const whyDocutech = {
   trusted: {
-    title: "Trusted by Thousands",
+    title: "Professional Solution",
     content:
-      "Over 64,000 businesses and individuals rely on DocuTech. Our users save time and streamline workflows with AI-powered document generation.",
+      "DocuTech provides reliable electronic signature capabilities for businesses of all sizes. Streamline your document signing workflow with our secure platform.",
   },
   soc2: {
     title: "SOC-2 Certified",
@@ -201,11 +121,8 @@ const plans = {
 };
 
 export default {
-  features,
   sections,
   faq,
-  clientLogos,
-  userFeedbacks,
   socialIcons,
   whyDocutech,
   plans,
