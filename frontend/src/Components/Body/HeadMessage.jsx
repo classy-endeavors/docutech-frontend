@@ -90,7 +90,7 @@ const Header = () => {
   }, [charIndex, isDeleting, currentWordIndex, words, isPaused]);
 
   return (
-    <h1 className="pointer-events-none my-3 text-center text-6xl font-bold">
+    <h1 className="pointer-events-none my-3 text-center text-3xl md:text-5xl lg:text-6xl font-bold px-4">
       Professional Document Platform; <br />
       <span className="text-brand-blue">
         {displayedWord}{" "}
@@ -101,18 +101,18 @@ const Header = () => {
 };
 
 const SubHeader = () => (
-  <p className="text-brand-black-light pointer-events-none my-10 text-center">
+  <p className="text-brand-black-light pointer-events-none my-10 text-center px-4 text-sm md:text-base">
     Fast, Smart & Secure – Professional electronic signature solution for your business
   </p>
 );
 
 const ComplianceList = () => (
-  <div className="flex justify-center">
-    <p className="text-brand-black-light pointer-events-none flex text-sm font-light">
+  <div className="flex justify-center px-4">
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-0">
       <ComplianceItem text="E-SIGN Compliant" />
       <ComplianceItem text="UETA Approved" />
       <ComplianceItem text="eIDAS Certified" />
-    </p>
+    </div>
   </div>
 );
 

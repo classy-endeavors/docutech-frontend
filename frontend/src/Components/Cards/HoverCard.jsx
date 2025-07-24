@@ -28,27 +28,27 @@ export function HoverCard({ plan, currency, billingType }) {
   const formattedPrice = formatPrice(plan.price);
 
   return (
-    <div className="group shadow-brand-pink bg-brand-blue flex h-[535px] w-[370px] flex-col justify-between shadow-lg ring-black transition duration-300 ring-inset hover:bg-white hover:ring-1">
+    <div className="group shadow-brand-pink bg-brand-blue flex min-h-[400px] w-full flex-col justify-between shadow-lg ring-black transition duration-300 ring-inset hover:bg-white hover:ring-1 rounded-lg">
       <div
-        className={`mx-12 mt-8 flex flex-col space-y-3 text-white group-hover:text-black ${animate}`}
+        className={`mx-6 md:mx-8 lg:mx-12 mt-6 md:mt-8 flex flex-col space-y-3 text-white group-hover:text-black ${animate}`}
       >
-        <h2 className="text-[25px] font-semibold">{plan.name.toUpperCase()}</h2>
+        <h2 className="text-xl md:text-2xl font-semibold">{plan.name.toUpperCase()}</h2>
         <p className="flex">
-          <span className="mr-1 text-[20px] font-light">{currency}</span>
-          <span className="text-[40px] leading-none">{formattedPrice}</span>
+          <span className="mr-1 text-lg md:text-xl font-light">{currency}</span>
+          <span className="text-3xl md:text-4xl leading-none">{formattedPrice}</span>
           {showPerUser ? (
-            <span className="mt-1 ml-1 text-[15px] font-thin">
+            <span className="mt-1 ml-1 text-sm font-thin">
               /user/{billingType}
             </span>
           ) : (
-            <span className="mt-1 ml-1 text-[15px] font-thin">
+            <span className="mt-1 ml-1 text-sm font-thin">
               /{billingType}
             </span>
           )}
         </p>
 
         {plan.minTotal && (
-          <p className="flex text-[15px] font-thin">
+          <p className="flex text-sm font-thin">
             Minimum total of
             <span className="ml-1 font-semibold">{currency}</span>
             <span className="ml-1 font-semibold">{plan.minTotal}</span>
@@ -57,21 +57,21 @@ export function HoverCard({ plan, currency, billingType }) {
         )}
 
         {plan.name === "Free" && (
-          <p className="bg-brand-gray/10 group-hover:bg-brand-gray w-fit rounded-sm px-3 py-2 text-[12px] font-light">
+          <p className="bg-brand-gray/10 group-hover:bg-brand-gray w-fit rounded-sm px-3 py-2 text-xs font-light">
             No Credit Card required
           </p>
         )}
 
         <ul className="ml-5 list-disc">
           {plan.features.map((feature, index) => (
-            <li key={index} className="text-[20px] font-light">
+            <li key={index} className="text-base md:text-lg font-light mb-2">
               {feature}
             </li>
           ))}
         </ul>
 
         {plan.minTotal && (
-          <div className="flex justify-between text-[20px] font-light">
+          <div className="flex justify-between text-base md:text-lg font-light">
             <p>Monthly Total</p>
             <p>
               <span>{currency}</span>
@@ -81,8 +81,8 @@ export function HoverCard({ plan, currency, billingType }) {
         )}
       </div>
 
-      <div className="mx-8 mb-8 flex">
-        <button className="text-brand-blue group-hover:bg-brand-blue flex-1 cursor-pointer rounded-3xl bg-white py-3 text-[15px] transition duration-300 group-hover:text-white">
+      <div className="mx-6 md:mx-8 mb-6 md:mb-8 flex">
+        <button className="text-brand-blue group-hover:bg-brand-blue flex-1 cursor-pointer rounded-3xl bg-white py-3 text-sm md:text-base transition duration-300 group-hover:text-white">
           Select Plan
         </button>
       </div>

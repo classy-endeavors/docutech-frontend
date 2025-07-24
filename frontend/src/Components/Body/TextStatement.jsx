@@ -32,20 +32,20 @@ export default function TextStatement() {
   ];
 
   return (
-    <div className="my-20">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold mb-4">
+    <div className="py-16">
+      <div className="text-center mb-12 px-4">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           Powerful Features for{" "}
           <span className="text-brand-blue">
             Document Signing
           </span>
         </h2>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto px-4">
           Everything you need to sign, send, and manage documents securely
         </p>
       </div>
       
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">

@@ -17,12 +17,12 @@ function NavBar() {
         id="NavBar"
         className="sticky top-0 z-20 backdrop-blur-xl duration-300"
       >
-        <div className="mx-10 my-5 flex items-center justify-between py-3">
+        <div className="mx-4 md:mx-10 my-5 flex items-center justify-between py-3">
           <a className="flex items-center" href="/">
             <img className="mr-1 max-w-[34px]" src={icon} alt="DocuTech Logo" />
             <span className="text-brand-blue text-2xl font-bold">DocuTech</span>
           </a>
-          <div className="text-brand-black-light flex justify-center text-[16px] font-light">
+          <div className="text-brand-black-light hidden md:flex justify-center text-[16px] font-light">
             {data.sections.map((item, index) => (
               <a
                 href={item.link}
