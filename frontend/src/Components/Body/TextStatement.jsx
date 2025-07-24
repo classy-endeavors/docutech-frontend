@@ -36,7 +36,7 @@ export default function TextStatement() {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4">
           Powerful Features for{" "}
-          <span className="from-brand-blue-down via-brand-blue-mid to-brand-blue bg-linear-to-r bg-clip-text text-transparent">
+          <span className="text-brand-blue">
             Document Signing
           </span>
         </h2>

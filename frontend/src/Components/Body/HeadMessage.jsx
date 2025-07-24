@@ -45,7 +45,7 @@ const Header = () => {
           setTimeout(() => {
             setIsPaused(false);
             setIsDeleting(true);
-          }, 2000); // 2 second delay
+          }, 3000); // 3 second delay
         }
       }
     };
@@ -78,7 +78,7 @@ const Header = () => {
 
     // Only set interval if not paused
     if (!isPaused) {
-      const typingInterval = setInterval(handleTyping, isDeleting ? 30 : 50);
+      const typingInterval = setInterval(handleTyping, isDeleting ? 50 : 100);
       return () => {
         clearInterval(typingInterval);
         window.removeEventListener("scroll", checkVisibility);
@@ -92,7 +92,7 @@ const Header = () => {
   return (
     <h1 className="pointer-events-none my-3 text-center text-6xl font-bold">
       Professional Document Platform; <br />
-      <span className="from-brand-blue-down via-brand-blue to-brand-blue bg-linear-to-r from-0% via-55% to-100% bg-clip-text text-transparent">
+      <span className="text-brand-blue">
         {displayedWord}{" "}
       </span>
       Effortlessly
@@ -109,7 +109,7 @@ const SubHeader = () => (
 const ComplianceList = () => (
   <div className="flex justify-center">
     <p className="text-brand-black-light pointer-events-none flex text-sm font-light">
-      <ComplianceItem text="ESIGN Compliant" />
+      <ComplianceItem text="E-SIGN Compliant" />
       <ComplianceItem text="UETA Approved" />
       <ComplianceItem text="eIDAS Certified" />
     </p>
