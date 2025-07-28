@@ -1,10 +1,4 @@
-import EnvelopeIcon from "../assets/icons/envelope.svg";
-import LinkedinIcon from "../assets/icons/linkedin.svg";
-
-const socialIcons = [
-  { name: "Email", icon: EnvelopeIcon, url: "mailto:contact@docutech.com" },
-  { name: "LinkedIn", icon: LinkedinIcon, url: "https://linkedin.com/company/docutech" },
-];
+const socialIcons = [];
 
 const sections = [
   { name: "Features", link: "#features" },
