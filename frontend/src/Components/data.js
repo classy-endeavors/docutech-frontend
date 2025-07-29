@@ -1,4 +1,8 @@
-const socialIcons = [];
+import EnvelopeIcon from "../assets/icons/envelope.svg";
+
+const socialIcons = [
+  { name: "Email", icon: EnvelopeIcon, url: "mailto:info@inspecto.ca" },
+];
 
 const sections = [
   { name: "Features", link: "#features" },
