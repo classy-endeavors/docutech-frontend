@@ -50,8 +50,13 @@ export default function Footer() {
                     {section.name}
                   </a>
                 ))}
-                <a href="#" className="underline-effect hover:underline">
-                  Legal terms
+                <a 
+                  href="/terms-of-service.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="underline-effect hover:underline"
+                >
+                  Terms of Service
                 </a>
                 <a href="#" className="underline-effect hover:underline">
                   Privacy Policy
