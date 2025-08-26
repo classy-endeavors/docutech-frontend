@@ -64,7 +64,7 @@ function FileGetter() {
             className="hidden"
             accept="application/pdf"
           />
-          <a href="https://app.docutech.io" target="_blank" rel="noopener noreferrer">
+          <a href="https://app.docsid.io" target="_blank" rel="noopener noreferrer">
             <Button
               className="mx-2 my-2 h-12 items-center rounded-4xl"
               imgSrc={uploadIcon}

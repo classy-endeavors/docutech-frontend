@@ -1,4 +1,3 @@
-import icon from "/src/assets/dt_logo white.svg";
 import data from "../data";
 
 export default function Footer() {
@@ -11,12 +10,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="text-center md:text-left">
               <a className="mb-2 flex items-center justify-center md:justify-start" href="/">
-                <img
-                  className="mr-2 max-w-[34px] fill-white"
-                  src={icon}
-                  alt="DocuTech Logo"
-                />
-                <span className="text-xl md:text-2xl font-bold text-white">DocuTech</span>
+                <span className="text-xl md:text-2xl font-bold text-white">DocsID</span>
               </a>
               <p className="text-sm text-white">Powered by Classy Endeavors</p>
             </div>

@@ -1,4 +1,4 @@
-export default function WhyChooseDocuTech() {
+export default function WhyChooseDocsID() {
   const benefits = [
     {
       icon: "🚀",
@@ -8,7 +8,7 @@ export default function WhyChooseDocuTech() {
     {
       icon: "🔒", 
       title: "SOC-2 Certified",
-      description: "DocuTech meets SOC-2 standards, ensuring the highest level of security for your documents. Your data remains protected."
+      description: "DocsID meets SOC-2 standards, ensuring the highest level of security for your documents. Your data remains protected."
     },
     {
       icon: "🌍",
@@ -27,7 +27,7 @@ export default function WhyChooseDocuTech() {
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="text-center mb-12 px-4">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-            Why Choose DocuTech
+            Why Choose DocsID
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto px-4">
             Trusted by businesses worldwide for secure, compliant, and professional document signing

@@ -5,7 +5,7 @@ export default function GetStarted() {
     <div className="my-16 flex justify-center px-4">
       <div className="text-center">
         <a
-          href="https://app.docutech.io"
+          href="https://app.docsid.io"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -1,6 +1,6 @@
 import Button from "../Buttons/Button";
 import data from "../data";
-import icon from "/src/assets/dt_logo.svg";
+import icon from "/src/assets/logo.png";
 
 function NavBar() {
   window.addEventListener("scroll", function () {
@@ -19,8 +19,7 @@ function NavBar() {
       >
         <div className="mx-4 md:mx-10 my-5 flex items-center justify-between py-3">
           <a className="flex items-center" href="/">
-            <img className="mr-1 max-w-[34px]" src={icon} alt="DocuTech Logo" />
-            <span className="text-brand-blue text-2xl font-bold">DocuTech</span>
+            <img className="max-w-[124px]" src={icon} alt="DocsID Logo" />
           </a>
           <div className="text-brand-black-light hidden md:flex justify-center text-[16px] font-light">
             {data.sections.map((item, index) => (
@@ -35,7 +34,7 @@ function NavBar() {
           </div>
           <div className="flex items-center space-x-5">
             <a
-              href="https://app.docutech.io"
+              href="https://app.docsid.io"
               target="_blank"
               rel="noopener noreferrer"
             >

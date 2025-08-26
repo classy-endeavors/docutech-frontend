@@ -1,7 +1,7 @@
-# ClassyEndeavors Assignment_DocuTech
+# ClassyEndeavors Assignment_DocsID
 
 ## Overview
-This repository serves as an assignment submission for **Classy Endeavour**. The project is a web-based solution designed with modern frontend technologies to create an efficient and visually appealing user interface. The website is **deployed at [docutech.umavane.me](https://docutech.umavane.me)**.
+This repository serves as an assignment submission for **Classy Endeavour**. The project is a web-based solution designed with modern frontend technologies to create an efficient and visually appealing user interface. The website is **deployed at [docsid.umavane.me](https://docsid.umavane.me)**.
 
 ## Features
 - ⚡ **Fast Development with Vite**
@@ -19,8 +19,8 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/yourusername/ClassyEndeavors-Assignment_DocuTech.git
-   cd ClassyEndeavors-Assignment_DocuTech
+   git clone https://github.com/yourusername/ClassyEndeavors-Assignment_DocsID.git
+   cd ClassyEndeavors-Assignment_DocsID
    ```
 2. **Install dependencies**
    ```sh
@@ -34,7 +34,7 @@ To set up the project locally, follow these steps:
 
 ## Project Structure
 ```
-ClassyEndeavors-Assignment_DocuTech/
+ClassyEndeavors-Assignment_DocsID/
 ├── src/
 │   ├── components/       # Reusable React components
 │   ├── pages/            # Page components
@@ -50,7 +50,7 @@ ClassyEndeavors-Assignment_DocuTech/
 ```
 
 ## Deployment
-The project is live at **[docutech.umavane.me](https://docutech.umavane.me)**.
+The project is live at **[docsid.umavane.me](https://docsid.umavane.me)**.
 
 ## Contributing
 Contributions are welcome! If you would like to contribute:

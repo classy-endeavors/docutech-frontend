@@ -16,12 +16,12 @@ const sections = [
 
 const faq = [
   {
-    q: "Are DocuTech signatures legally binding?",
-    a: "Yes, DocuTech signatures are legally binding and comply with ESIGN Act, UETA, and eIDAS regulations. Our electronic signatures have the same legal validity as handwritten signatures and are accepted by courts worldwide.",
+    q: "Are DocsID signatures legally binding?",
+    a: "Yes, DocsID signatures are legally binding and comply with ESIGN Act, UETA, and eIDAS regulations. Our electronic signatures have the same legal validity as handwritten signatures and are accepted by courts worldwide.",
   },
   {
-    q: "What file formats does DocuTech support?",
-    a: "DocuTech currently supports PDF documents for signing. We're working on expanding support for additional document formats in future updates.",
+    q: "What file formats does DocsID support?",
+    a: "DocsID currently supports PDF documents for signing. We're working on expanding support for additional document formats in future updates.",
   },
   {
     q: "How secure are my documents?",
@@ -29,7 +29,7 @@ const faq = [
   },
   {
     q: "Can multiple people sign the same document?",
-    a: "Yes, DocuTech supports multiple signers on the same document. You can set signing order, send reminders, and track the progress of each signer in real-time.",
+    a: "Yes, DocsID supports multiple signers on the same document. You can set signing order, send reminders, and track the progress of each signer in real-time.",
   },
   {
     q: "Is there a free plan available?",
@@ -37,16 +37,16 @@ const faq = [
   },
 ];
 
-const whyDocutech = {
+const whyDocsID = {
   trusted: {
     title: "Professional Solution",
     content:
-      "DocuTech provides reliable electronic signature capabilities for businesses of all sizes. Streamline your document signing workflow with our secure platform.",
+      "DocsID provides reliable electronic signature capabilities for businesses of all sizes. Streamline your document signing workflow with our secure platform.",
   },
   soc2: {
     title: "SOC-2 Certified",
     content:
-      "DocuTech meets SOC-2 standards, ensuring the highest level of security for your documents. Your data remains confidential and protected at all times.",
+      "DocsID meets SOC-2 standards, ensuring the highest level of security for your documents. Your data remains confidential and protected at all times.",
   },
   gdpr: {
     title: "GDPR & HIPAA Compliant",
@@ -122,6 +122,6 @@ export default {
   sections,
   faq,
   socialIcons,
-  whyDocutech,
+  whyDocsID,
   plans,
 };

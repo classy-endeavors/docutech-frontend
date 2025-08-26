@@ -4,7 +4,7 @@ import HeadMessage from "./Components/Body/HeadMessage";
 import GetStarted from "./Components/Body/GetStarted";
 import TextStatement from "./Components/Body/TextStatement";
 import Footer from "./Components/Footer/Footer";
-import WhyChooseDocuTech from "./Components/Body/WhyChooseDocuTEch";
+import WhyChooseDocsID from "./Components/Body/WhyChooseDocsID";
 import Subscription from "./Components/Body/Subscription";
 import FAQSection from "./Components/Body/FAQ";
 import Background from "./Components/Body/Background";
@@ -21,7 +21,7 @@ function App() {
       </div>
       <Background />
       <div id="why-choose-us" className="">
-        <WhyChooseDocuTech />
+        <WhyChooseDocsID />
       </div>
       <div id="pricing">
         <Subscription />
