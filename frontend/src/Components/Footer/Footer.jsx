@@ -52,7 +52,12 @@ export default function Footer() {
                 >
                   Terms of Service
                 </a>
-                <a href="#" className="underline-effect hover:underline">
+                <a 
+                  href="/privacy-policy.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="underline-effect hover:underline"
+                >
                   Privacy Policy
                 </a>
               </div>
